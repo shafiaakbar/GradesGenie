@@ -56,8 +56,7 @@ qa_chain = RetrievalQA.from_chain_type(
 
 # Step 4: Take User Query and Invoke Model
 user_query = input("Write your Query Here: ")
-response = qa_chain.invoke({'query': user_query})  # ✅ Fixed key
-
+response = qa_chain.invoke({'query': user_query})  # 
 # Display results
 print("Result:", response["result"])
 print("Source Documents:", response["source_documents"])
